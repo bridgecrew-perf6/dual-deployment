@@ -1,0 +1,44 @@
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+
+
+
+
+
+  float a = 0; // figure out a, b, c, x, y
+  float b = 0;
+  float c = 0;
+  float x = 0;
+  float y = 0;
+  int h_sum=0;
+ 
+}
+void loop() {
+  
+   //update all variables with altimeter data
+
+  
+  float b=+tc;  // tc=current time or the time that took to collect the data from the altimeter
+  int h_sum=+hc; // hc=current hight
+  
+  float a= sq(b);
+  float c= pow(b,0);
+  
+  int x= (int)b*h_sum;
+  int y= h_sum;
+   
+ 
+  
+  float mF = (c*x - b*y)/(a*c - b*b);
+  float bF = (-b*x + a*y)/(a*c-b*b);
+  float q = 42;
+  float d = 0.5; //change to actual decent rate with both chutes open
+
+  float tO = (-d * q - bF)/(mF - d);
+  
+  
+
+   
+
+}
