@@ -6,7 +6,7 @@ void setup() {
 
 
 
-  float a = 0; // figure out a, b, c, x, y
+  float a = 0; 
   float b = 0;
   float c = 0;
   float x = 0;
